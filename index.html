@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hitung Luas Persegi</title>
+</head>
+<body>
+    <h1>Hitung Luas Persegi</h1>
+
+    <label for="panjang">Panjang Sisi: </label>
+    <input type="number" id="panjang" placeholder="Masukkan panjang sisi">
+    
+    <button onclick="hitungLuas()">Hitung</button>
+
+    <p>Luas Persegi: <span id="luas"></span></p>
+
+    <script>
+        function hitungLuas() {
+            // Ambil nilai panjang sisi dari input
+            var panjangSisi = parseFloat(document.getElementById("panjang").value);
+            
+            // Hitung luas persegi
+            var luas = panjangSisi * panjangSisi;
+            
+            // Tampilkan hasilnya di elemen dengan id "luas"
+            document.getElementById("luas").textContent = luas;
+        }
+    </script>
+</body>
+</html>
